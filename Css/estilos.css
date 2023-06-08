@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&family=Tajawal:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(228, 216, 149);
+    color: brown;
+}
+
+
+header{
+    display: flex;
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding: 25px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+    
+ nav li {
+    display: inline;
+    margin: 10px;
+ }
+
+ nav a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 80px;
+    padding: 5px 15px;
+    border-radius: 40px;
+    color: #360202;
+    }
+
+nav a:hover {
+    background-color: black;
+    color: rgb(255, 1, 141);
+ }
+    
+.container  {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+h1 {
+    display: flex;
+    background-color: rgb(253, 251, 251);
+    width: cover;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid rgb(138, 103, 80);
+    margin: 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    background-color: rgb(253, 251, 251);
+    width: cover;
+    height: 350px;
+    padding-top: 5px; 
+    padding-left: 5px;
+    border: 10px solid rgb(138, 103, 80);
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Georgia', serif;
+    font-size: 25px;
+    text-align: left;
+    padding: 5px;
+    margin: 20px;
+}
+
+h2{
+    font-size: 40px;
+    text-align: justify;
+    margin: 15px;
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+
+/*Esto cambia el color de fondo del encabezado a #333 en pantallas con un ancho
+máximo de 767 píxeles.*/
+@media (max-width: 767px) {
+    header {
+        background-color: #fff;
+    }
+} 
+
+/*Esto cambia el tamaño de fuente del texto de navegación a 16 píxeles en pantallas
+con un ancho máximo de 767 píxeles.*/
+@media (max-width: 767px) {
+    nav {
+        font-size: 16px;
+    }
+}
+
+/*Esto ajusta el ancho del encabezado a 1200 píxeles en pantallas con un ancho
+mínimo de 1200 píxeles.*/
+@media (min-width:1200px) {
+    nav {
+        width:1200px;
+    }
+}
